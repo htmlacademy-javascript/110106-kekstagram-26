@@ -1,5 +1,3 @@
-
-
 function getRandomInt(min, max) {
   if (max < min || min < 0 || max < 0) {
     return;
@@ -75,18 +73,14 @@ const DESCRIPTION = [
   'Котики.',
 ];
 
-const getRandomArrayElement = (elements) => {
-  return elements[getRandomInt(0, elements.length - 1)];
-}
+const getRandomArrayElement = (elements) => elements[getRandomInt(0, elements.length - 1)];
 
-const createNewComments = (id) => {
-  return {
-    id: id,
-    avatar: `img/avatar-${id}.svg`,
-    message: getRandomArrayElement(MESSAGE),
-    name: getRandomArrayElement(NAMES),
-  };
-};
+const createNewComments = (id) => ({
+  id: id,
+  avatar: `img/avatar-${id}.svg`,
+  message: getRandomArrayElement(MESSAGE),
+  name: getRandomArrayElement(NAMES),
+});
 
 const createNewPhoto = (id) => {
   const comments = [];
