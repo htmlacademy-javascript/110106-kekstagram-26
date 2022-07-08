@@ -32,8 +32,6 @@ const DESCRIPTIONS = [
   'Котики.',
 ];
 
-
-
 const MAX_COMMENTS = 15;
 const MIN_LIKES = 15;
 const MAX_LIKES = 200;
